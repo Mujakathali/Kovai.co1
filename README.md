@@ -71,11 +71,11 @@ Added a custom weekend regressor to improve accuracy.
 Best suited for data with strong and clear seasonality (which matched our dataset).
 
 **5. Model Performance (Compared on 30-day Test Window)**
-Model	MAE ↓	RMSE ↓	R² ↑
-Prophet	5193	8219	0.07
-SARIMA	5958	9683	-0.28
-ARIMA(1,1,1)	8479	10620	-0.55
-ARIMA(2,1,2) Tuned	8163	11215	-0.73
+i)Model	MAE ↓	RMSE ↓	R² ↑
+ii)Prophet	5193	8219	0.07
+iii)SARIMA	5958	9683	-0.28
+iv)ARIMA(1,1,1)	8479	10620	-0.55
+v)ARIMA(2,1,2) Tuned	8163	11215	-0.73
 
 ✓ Prophet clearly performed best with the lowest error and positive R².
 
@@ -96,11 +96,11 @@ Confidence intervals were included for uncertainty estimation.
 
 This project successfully built a complete end-to-end time-series forecasting pipeline:
 
-✔ Data cleaning & preprocessing
-✔ Exploratory analysis with insights
-✔ Stationarity testing
-✔ ARIMA & SARIMA modeling
-✔ Hyperparameter tuning
-✔ Prophet modeling with regressors
-✔ Model comparison
-✔ 7-day forecasting with visualization
+* Data cleaning & preprocessing
+* Exploratory analysis with insights
+* Stationarity testing
+* ARIMA & SARIMA modeling
+* Hyperparameter tuning
+* Prophet modeling with regressors
+* Model comparison
+* 7-day forecasting with visualization
