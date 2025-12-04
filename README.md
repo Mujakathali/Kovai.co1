@@ -70,14 +70,17 @@ Added a custom weekend regressor to improve accuracy.
 
 Best suited for data with strong and clear seasonality (which matched our dataset).
 
-**5. Model Performance (Compared on 30-day Test Window)**
-i)Model	MAE ↓	RMSE ↓	R² ↑
-ii)Prophet	5193	8219	0.07
-iii)SARIMA	5958	9683	-0.28
-iv)ARIMA(1,1,1)	8479	10620	-0.55
-v)ARIMA(2,1,2) Tuned	8163	11215	-0.73
+## 5. Model Performance (Compared on 30-Day Test Window)
 
-✓ Prophet clearly performed best with the lowest error and positive R².
+| Model                 | MAE ↓ | RMSE ↓ | R² ↑   |
+|----------------------|-------|--------|--------|
+| Prophet              | 5,193 | 8,219  | 0.07   |
+| SARIMA               | 5,958 | 9,683  | -0.28  |
+| ARIMA (1,1,1)        | 8,479 | 10,620 | -0.55  |
+| ARIMA (2,1,2) Tuned  | 8,163 | 11,215 | -0.73  |
+
+
+ Prophet clearly performed best with the lowest error and positive R².
 
 Reason: Prophet is designed for datasets with strong seasonality, and our data had clear weekly patterns.
 
